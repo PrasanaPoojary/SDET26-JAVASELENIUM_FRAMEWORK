@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test-Runner-2-Firefox(failed)">
+    <parameter name="BROWSER" value="firefox"/>
+    <classes>
+      <class name="com.crm.comcast.Test.CreateOrganizationTest1">
+        <methods>
+          <include name="config_BS"/>
+          <include name="config_BC"/>
+          <include name="config_AS"/>
+          <include name="config_AC"/>
+          <include name="config_AM"/>
+          <include name="createOrganization_With_Industries_And_Type_Test"/>
+          <include name="createOrganizationTest"/>
+          <include name="config_BM"/>
+        </methods>
+      </class> <!-- com.crm.comcast.Test.CreateOrganizationTest1 -->
+      <class name="com.crm.comcast.Test.ContactPageTest">
+        <methods>
+          <include name="createContact_Support_DateTest"/>
+          <include name="config_BS"/>
+          <include name="config_BC"/>
+          <include name="config_AS"/>
+          <include name="config_AC"/>
+          <include name="config_AM"/>
+          <include name="createConatctWithOrgTest"/>
+          <include name="createContactWithLastNameTest"/>
+          <include name="config_BM"/>
+        </methods>
+      </class> <!-- com.crm.comcast.Test.ContactPageTest -->
+    </classes>
+  </test> <!-- Test-Runner-2-Firefox(failed) -->
+  <test thread-count="5" parallel="tests" name="Test-Runner-1-Chrome(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.crm.comcast.Test.CreateOrganizationTest1">
+        <methods>
+          <include name="config_BS"/>
+          <include name="config_BC"/>
+          <include name="config_AS"/>
+          <include name="config_AC"/>
+          <include name="config_AM"/>
+          <include name="createOrganizationTest"/>
+          <include name="config_BM"/>
+        </methods>
+      </class> <!-- com.crm.comcast.Test.CreateOrganizationTest1 -->
+      <class name="com.crm.comcast.Test.ContactPageTest">
+        <methods>
+          <include name="createContact_Support_DateTest"/>
+          <include name="config_BS"/>
+          <include name="config_BC"/>
+          <include name="config_AS"/>
+          <include name="config_AC"/>
+          <include name="config_AM"/>
+          <include name="createConatctWithOrgTest"/>
+          <include name="createContactWithLastNameTest"/>
+          <include name="config_BM"/>
+        </methods>
+      </class> <!-- com.crm.comcast.Test.ContactPageTest -->
+    </classes>
+  </test> <!-- Test-Runner-1-Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
